@@ -24,14 +24,6 @@
         android:paddingRight="20dp">
 
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="ravime"
-            android:textSize="20dp" />
-
-
         <Button
             android:id="@+id/hiragana"
             android:layout_width="match_parent"
@@ -47,6 +39,46 @@
             android:layout_marginBottom="10dp"
             android:background="#9E0A3C91"
             android:text="katagana" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="ravime"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/words"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9E0A3C91"
+                android:text="words"/>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#9E0A3C91"
+                android:layout_weight="1"
+                android:layout_marginLeft="3sp"
+                android:layout_marginRight="7sp"
+                android:text="add" />
+
+            <Button
+                android:id="@+id/ask"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#9E0A3C91"
+                android:layout_weight="1"
+                android:layout_marginRight="3sp"
+                android:layout_marginLeft="7sp"
+                android:text="ask" />
+        </LinearLayout>
 
     </LinearLayout>
 

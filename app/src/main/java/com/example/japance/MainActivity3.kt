@@ -115,7 +115,6 @@ class MainActivity3 : AppCompatActivity() {
             )
         }
 
-
         displayLetters(g, gojGrid)
         displayLetters(d, dakGrid)
         displayLetters(yg, yogGrid)
