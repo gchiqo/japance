@@ -4,17 +4,15 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.graphics.Color
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.GridLayout
 import android.widget.LinearLayout
 import android.widget.TextView
 
-class AddActivity : AppCompatActivity() {
+class AddAskActivity : AppCompatActivity() {
     var array: MutableList<String> = ArrayList()
 
     lateinit var input: EditText
@@ -36,7 +34,7 @@ class AddActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add)
+        setContentView(R.layout.activity_add_ask)
 
         input = findViewById(R.id.input)
         question = findViewById(R.id.question)
@@ -74,7 +72,7 @@ class AddActivity : AppCompatActivity() {
 
         //  go on another page with selected data as aray
         ok.setOnClickListener {
-            val inte = Intent(this, MainActivity2::class.java)
+            val inte = Intent(this, MainActivity::class.java)
             inte.putExtra("array", array.toTypedArray())
             startActivity(inte)
         }

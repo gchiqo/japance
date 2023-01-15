@@ -7,9 +7,8 @@ import android.widget.Button
 import android.widget.GridLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import org.w3c.dom.Text
 
-class MainActivity3 : AppCompatActivity() {
+class SelectActivity : AppCompatActivity() {
 
     var array: MutableList<String> = ArrayList()
     lateinit var goj: TextView
@@ -21,11 +20,12 @@ class MainActivity3 : AppCompatActivity() {
     lateinit var yogGrid: GridLayout
     lateinit var yodGrid: GridLayout
 
+
     lateinit var button: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main3)
+        setContentView(R.layout.activity_select)
 
         goj = findViewById(R.id.goj)
         dak = findViewById(R.id.dak)
@@ -51,7 +51,7 @@ class MainActivity3 : AppCompatActivity() {
                 "ナ,na", "ニ,ni", "ヌ,nu", "ネ,ne", "ノ,no",
                 "ハ,ha", "ヒ,hi", "フ,fu", "ヘ,he", "ホ,ho",
                 "マ,ma", "ミ,mi", "ム,mu", "メ,me", "モ,mo",
-                "ヤ,ya", "ユ,yi", "ヨ,yu",
+                "ヤ,ya", "ユ,yu", "ヨ,yo",
                 "ラ,ra", "リ,ri", "ル,ru", "レ,re", "ロ,ro",
                 "ワ,wa", "ヲ,wo",
                 "ン,n"
@@ -128,7 +128,7 @@ class MainActivity3 : AppCompatActivity() {
 
         //  go on another page with selected data as aray
         button.setOnClickListener {
-            val inte = Intent(this, MainActivity2::class.java)
+            val inte = Intent(this, MainActivity::class.java)
             inte.putExtra("array", array.toTypedArray())
             startActivity(inte)
         }
