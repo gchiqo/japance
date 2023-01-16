@@ -46,7 +46,7 @@
         android:layout_width="101dp"
         android:layout_height="37dp"
         android:layout_marginTop="15dp"
-        android:text="don't know"
+        android:text="don't konw"
         android:textAlignment="center"
         android:textColor="#FF0000"
         android:textSize="18dp"

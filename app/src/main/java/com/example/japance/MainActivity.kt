@@ -58,14 +58,14 @@ class MainActivity : AppCompatActivity() {
             letter.text = hir!![n].split(',')[0]
 
             next.setOnClickListener {
-                if (next.text == "don't konw") {
+                if (next.text.toString().equals("don't konw")) {
                     input.setText("")
                     letter.text = hir!![n].split(',')[1]
                     next.setTextColor(Color.GREEN);
                     next.text = "Ok"
                     sav.add(hir!![n])
                     n++; m++
-                } else if (next.text == "Ok") {
+                } else if (next.text.toString().equals("Ok")) {
                     input.setText("")
                     next.setTextColor(Color.RED)
                     next.text = "don't konw"
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
                         next.visibility = View.GONE
                         letter.text = sav[b].split(',')[0]
                     }
-                } else if (next.text == "save") {
+                } else if (next.text.toString().equals("save")) {
                     saveThing()
                 }else{
                     showThings()
