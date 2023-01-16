@@ -110,6 +110,7 @@ class MainActivity : AppCompatActivity() {
         letter.textSize = 30F
         letter.text = "enter your name to submit score"
         next.text = "save"
+        next.visibility = View.VISIBLE
         next.setTextColor(Color.GREEN)
     }
 
