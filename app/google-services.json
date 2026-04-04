@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "577151511865",
+    "project_id": "japance-1905e",
+    "storage_bucket": "japance-1905e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577151511865:android:cf82c74340d2c44eb74ce8",
+        "android_client_info": {
+          "package_name": "com.example.japance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577151511865-eg1kff2chnelprf75k5o3jbl1664d16t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC3miGVrTLQH1NxofyzXAhJST_KwfgUCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577151511865-eg1kff2chnelprf75k5o3jbl1664d16t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
